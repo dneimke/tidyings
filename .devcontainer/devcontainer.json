@@ -1,19 +1,19 @@
 {
-    "name": "Node.js Dev Container",
-    "build": {
-        "dockerfile": "Dockerfile"
-    },
-    "customizations": {
-        "vscode": {
-            "settings": {
-                "extensions": [
-                    "dbaeumer.vscode-eslint",
-                    "esbenp.prettier-vscode"
-                ],
-                "terminal.integrated.shell.linux": "/bin/bash"
-            }
-        }
-    },
-    "postCreateCommand": "npm install",
-    "remoteUser": "node"
+  "name": "Tidyings Dev Container",
+  "build": { "dockerfile": "Dockerfile" },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot@prerelease",
+        "github.copilot-chat@prerelease",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "postCreateCommand": "sudo npm install"
 }
