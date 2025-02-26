@@ -50,19 +50,13 @@ To get started with this application, follow these steps:
    cd tidyings
    ```
 
-2. **Install dependencies**:
-
-   ```pwsh
-   npm install
-   ```
-
-3. **Compile TypeScript files**:
+2. **Compile TypeScript files**:
 
    ```pwsh
    npx tsc
    ```
 
-4. **Run the application**:
+3. **Run the application**:
 
    ```pwsh
    node dist/index.js
