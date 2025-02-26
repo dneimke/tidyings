@@ -52,15 +52,15 @@ To get started with this application, follow these steps:
 
 2. **Compile TypeScript files**:
 
-   ```pwsh
-   npx tsc
-   ```
+```pwsh
+npx tsc
+```
 
 3. **Run the application**:
 
-   ```pwsh
-   node dist/index.js
-   ```
+```pwsh
+node dist/index.js
+```
 
 ## Usage
 
