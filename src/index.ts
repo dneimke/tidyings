@@ -1,9 +1,10 @@
-import { guardClauseExample } from "./utils/helper";
+import { nestedClauseExample } from "./tests/guard.tests";
 
 const main = () => {
   console.log("Application started");
 
-  guardClauseExample({ isValid: true });
+  // Guard clause examples
+  var result = nestedClauseExample({ isValid: true });
 
   console.log("Application ended");
 };
