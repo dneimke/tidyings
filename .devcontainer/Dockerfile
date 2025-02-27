@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/javascript-node:0-18
+FROM mcr.microsoft.com/devcontainers/javascript-node:latest
 
 # Install git
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
