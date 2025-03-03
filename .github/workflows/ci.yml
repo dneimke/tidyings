@@ -24,4 +24,4 @@ jobs:
       - name: Run simple linter
         run: npx --yes genaiscript run simple.linter  --pull-request-reviews
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CP_API_TOKEN }}
