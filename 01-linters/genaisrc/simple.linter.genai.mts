@@ -1,6 +1,7 @@
 script({
     title: "Simple Linter",
     description: "A simple linter that checks for common errors in code.",
+    files: "**/*.ts",
     model: "github:gpt-4o",
     system: [
         "system",
