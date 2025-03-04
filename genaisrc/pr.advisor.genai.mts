@@ -1,6 +1,6 @@
 script({
-    title: "PR Advisor",
-    description: "A simple linter that checks for common errors in code.",
+    title: "PR Title Evaluator",
+    description: "A tool that evaluates pull request titles against predefined code standards.",
     model: "github:gpt-4o"
 })
 
