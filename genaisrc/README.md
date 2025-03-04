@@ -4,7 +4,7 @@ This folder contains scripts and configurations for using GenAIScript to generat
 
 ## Prerequisites
 
-Before you can use GenAIScript, you need to follow the instructions for instaling and configuring your environment. These can be found at the [GenAIScript documentation](https://microsoft.github.io/genaiscript/getting-started/).
+Before you can use GenAIScript, you need to follow the instructions for installing and configuring your environment. These can be found at the [GenAIScript documentation](https://microsoft.github.io/genaiscript/getting-started/).
 
 ## Setting Up Your API Token
 
@@ -25,13 +25,12 @@ To access GenAIScript models, you need to configure an API token. Follow these s
 
 This folder contains example scripts to help you get started with GenAIScript:
 
-- `poem.genai.mjs`: Generates a poem using GenAIScript.
-- `proofreader.genai.mjs`: Generates a one-sentence poem using GenAIScript.
+- `poem.genai.mts`: Generates a poem using GenAIScript.
 
 To run the same scripts in your project, use the following commands:
 
 ```bash
-npx genaiscript run proofreader
+npx genaiscript run poem
 ```
 
 Feel free to explore and modify these scripts to suit your needs.
