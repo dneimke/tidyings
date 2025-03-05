@@ -14,4 +14,6 @@ $`## Task
 Evaluate titles in the REPORTS against the CODE_STANDARDS and give a brief analysis of the results
 
 Report errors or warnings using annotations.
+
+Ignore files outside the src directory.
 `
