@@ -1,4 +1,5 @@
 # GitHub Copilot Custom Instructions for "Tidy First?" Principles
+
 - **Single Condition:** If you see code like this:
 
     ```javascript
@@ -36,3 +37,7 @@
 - **Reduce Nesting:** This technique reduces nested if statements, making the main logic of the function easier to follow.
 
 - **Focus on Error Handling:** Use guard clauses to handle error conditions or invalid inputs at the beginning of a function.
+
+
+For more detailed instructions, refer to the following files:
+- [Code Review Instructions](./pr-title-guidelines.md)
