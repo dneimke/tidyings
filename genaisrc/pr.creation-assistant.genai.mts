@@ -32,5 +32,29 @@ def("GIT_DIFF", diff, {
 })
 
 const instructions = await workspace.readText("docs/pr-guidelines.md")
-def("CODE_STANDARDS", instructions.content)
+def("PR_STANDARDS", instructions.content)
 
+$`
+You are an expert senior software engineer. Your task is to review a <GIT_DIFF> from the current branch against the target branch (main) and generate a TITLE and DESCRIPTION for a pull request. Use the documented PR standards provided in the [Code Review Instructions](./pr-title-guidelines.md) file.
+
+### Instructions:
+1. **Review the git diff**: Analyze the changes made in the current branch compared to the main branch.
+2. **Generate a TITLE**: Create a concise and descriptive title for the pull request that summarizes the changes.
+3. **Generate a DESCRIPTION**: Write a detailed description that includes:
+   - A summary of the changes made.
+   - The reason for the changes.
+   - Any relevant context or background information.
+   - Instructions for testing the changes, if applicable.
+   - Any potential impact on existing functionality.
+
+### Example:
+**TITLE**: Refactor nested conditions in user authentication module
+
+**DESCRIPTION**:
+- Refactored nested if statements in the user authentication module to reduce nesting and improve readability.
+- Inverted initial conditions to handle error cases early and return immediately.
+- Added guard clauses to handle invalid inputs at the beginning of functions.
+- These changes improve code maintainability and align with the "Tidy First?" principles.
+
+Please ensure the TITLE and DESCRIPTION adhere to the documented <PR_STANDARDS>.
+`
