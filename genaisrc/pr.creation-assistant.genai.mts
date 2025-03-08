@@ -11,20 +11,9 @@ script({
     responseType: "markdown",
 })
 
-// compute diff
-const { stdout: diff } = await host.exec("git", [
-    "diff",
-    "main",
-    "--",
-    ":!**/genaiscript.d.ts", // git exclude format
-    ":!**/jsconfig.json",
-    ":!*yarn.lock",
-])
-
-
-def("GIT_DIFF", diff, {
-    language: "diff",
-    maxTokens: 20000,
+const defaultBranch = 'main'
+const changes = await git.diff({
+    base: defaultBranch,
 })
 
 const instructions = await workspace.readText("docs/pr-guidelines.md")
@@ -35,7 +24,7 @@ You are an expert senior software engineer. Your task is to review a <GIT_DIFF> 
 
 ### Instructions:
 1. **Review the <GIT_DIFF>**: Analyze the changes made in the current branch compared to the main branch.
-2. **Generate a TITLE**: Create a concise and descriptive title for the pull request that summarizes the changes.
+2. **Generate a TITLE**: Create a concise and descriptive title for the pull request that summarizes the core changes.
 3. **Generate a DESCRIPTION**: Write a detailed description that includes:
    - A summary of the core reason for the changes, focusing on changes to '*.genai.dts' scripts in the './genaisrc' folder.
    - Any changes to files outside the './genaisrc' folder should be grouped separately.
