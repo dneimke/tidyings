@@ -1,5 +1,3 @@
-// ref: https://microsoft.github.io/genaiscript/guides/pull-request-reviewer/
-
 script({
     title: "PR Creation Assistant",
     description: "Generates pull request (PR) titles and descriptions by analyzing code diffs, applying team PR guidelines, and leveraging an LLM to provide intelligent suggestions. This script aims to streamline the PR creation process and improve review efficiency.",
@@ -43,13 +41,4 @@ You are an expert senior software engineer. Your task is to review a <GIT_DIFF> 
    - Any relevant context or background information.
    - Instructions for testing the changes, if applicable.
    - Any potential impact on existing functionality.
-
-### Example:
-**TITLE**: Refactor nested conditions in user authentication module
-
-**DESCRIPTION**:
-- Refactored nested if statements in the user authentication module to reduce nesting and improve readability.
-- Inverted initial conditions to handle error cases early and return immediately.
-- Added guard clauses to handle invalid inputs at the beginning of functions.
-- These changes improve code maintainability and align with the "Tidy First?" principles.
 `
