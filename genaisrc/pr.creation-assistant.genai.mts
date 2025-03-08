@@ -36,7 +36,7 @@ You are an expert senior software engineer. Your task is to review a <GIT_DIFF> 
 1. **Review the <GIT_DIFF>**: Analyze the changes made in the current branch compared to the main branch.
 2. **Generate a TITLE**: Create a concise and descriptive title for the pull request that summarizes the changes.
 3. **Generate a DESCRIPTION**: Write a detailed description that includes:
-   - A summary of the core reason for the changes.
+   - A summary of the core reason for the changes, focusing on changes to '*.genai.dts' scripts in the './genaisrc' folder.
    - The reason for the changes.
    - Any relevant context or background information.
    - Instructions for testing the changes, if applicable.
