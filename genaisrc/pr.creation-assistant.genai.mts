@@ -31,3 +31,6 @@ def("GIT_DIFF", diff, {
     maxTokens: 20000,
 })
 
+const instructions = await workspace.readText("docs/pr-guidelines.md")
+def("CODE_STANDARDS", instructions.content)
+

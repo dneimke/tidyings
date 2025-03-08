@@ -7,7 +7,7 @@ script({
 const csvs = await workspace.findFiles("reports/**/*.csv")
 def("REPORTS", csvs)
 
-const instructions = await workspace.readText(".github/pr-title-guidelines.md")
+const instructions = await workspace.readText("docs/pr-guidelines.md")
 def("CODE_STANDARDS", instructions.content)
 
 $`## Task
