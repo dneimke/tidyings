@@ -1,26 +1,69 @@
-# PR Title Guidelines
+# Pull Request Guidelines
 
-When creating a pull request, the title plays a crucial role in communicating the purpose of the changes to reviewers and other team members. A well-written PR title can help streamline the code review process and provide clarity on what to expect in the changes.
+## What makes a good pull request?
 
-Here are some bullet point guidelines for writing good pull request (PR) titles:
+- Clear descriptions and focused changes.
+- Screenshots for visual context.
+- Passing tests and code quality checks.
+- Changes meet the requirements.
 
-- Be Descriptive: Clearly describe the purpose of the PR and what changes it introduces.
-  - Example: Add user authentication feature
+## Review Process
 
-- Use Imperative Mood: Write the title as if you are giving a command.
-  -Example: Fix login bug
+- Checklist for reviewers.
+- Guidelines for feedback and change requests.
 
-- Keep It Concise: Aim for a short and to-the-point title, ideally under 50 characters.
-  - Example: Update README with setup instructions
+## Titles and Labels
 
-- Include Relevant Keywords: Use keywords that make it easy to understand the context of the changes.
-  - Example: Refactor user profile component
+- Use clear and consistent titles with helpful prefixes like "fix," "draft," or "chore."
+- Use labels effectively (e.g., "bug," "feature," "documentation").
 
-- Avoid Jargon: Use clear and simple language that can be understood by all team members.
-  - Example: Improve error handling in payment module
+## Size and Timeliness
 
-- Indicate Scope: If the PR affects a specific part of the codebase, mention it in the title.
-  - Example: Optimize database queries in user service
+- Aim for smaller, manageable pull requests.
+- Set expectations for turnaround time.
 
-- Use Consistent Formatting: Follow a consistent format for PR titles across the project.
-  - Example: Add, Fix, Update, Remove, etc.
+## Branching
+
+- Use feature branches for tasks expected to take more than a day or two.
+- Follow a consistent naming convention for branches.
+
+## Approvers
+
+- Note: This section is a work in progress and will be further refined in the future.
+- Ensure the correct approvers are assigned to the pull request.
+- For urgent pull requests, consider messaging approvers directly.
+- Approvers should focus on code quality, functionality, and adherence to team standards.
+- Approvers should provide clear and constructive feedback.
+
+## Draft Pull Requests
+
+- Use draft pull requests for early feedback before finalizing changes.
+- Use draft pull requests to share work in progress and get help when blocked.
+
+## Automation
+
+- Consider automating aspects of the pull request process, such as requiring a minimum number of approvals or specific quality checks.
+- It's possible to override the CI build for pull requests, but there should be clear expectations around when and how to do so.
+
+## Merging Strategy
+
+- Our preferred merging strategy is squash merge with branch deletion.
+- This keeps the commit history clean on develop and main branches.
+- This prevents a messy backlog of completed pull request branches.
+
+# Example Pull Request
+
+**Title**: feat: Implement `GetUserProfile` endpoint in API integration layer
+
+**Description**:
+This pull request adds a new endpoint, `GetUserProfile`, to the API integration layer. This endpoint allows the frontend to retrieve user profile information from the backend.
+
+**Changes**:
+- Created a new function `GetUserProfile(userId)` in `UserController.cs` to handle the API call.
+- Added unit tests to verify the function's functionality and error handling.
+- Updated the API documentation to include the new endpoint.
+
+**Checklist**:
+- [x] Code follows team style guidelines.
+- [x] Unit tests have been added and passed.
+- [x] Documentation has been updated.
