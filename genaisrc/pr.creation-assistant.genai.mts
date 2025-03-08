@@ -36,9 +36,10 @@ You are an expert senior software engineer. Your task is to review a <GIT_DIFF> 
 1. **Review the <GIT_DIFF>**: Analyze the changes made in the current branch compared to the main branch.
 2. **Generate a TITLE**: Create a concise and descriptive title for the pull request that summarizes the changes.
 3. **Generate a DESCRIPTION**: Write a detailed description that includes:
-   - A summary of the changes made.
+   - A summary of the core reason for the changes.
    - The reason for the changes.
    - Any relevant context or background information.
    - Instructions for testing the changes, if applicable.
    - Any potential impact on existing functionality.
+   - Separate any chores or minor tasks from the core reason for the changes.
 `
