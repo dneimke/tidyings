@@ -1,10 +1,10 @@
 script({
-    title: "PR Title Evaluator",
+    title: "PR Title Reviewer",
     description: "A tool that evaluates pull request titles against predefined code standards.",
     model: "github:gpt-4o"
 })
 
-const csvs = await workspace.findFiles("**/*.csv")
+const csvs = await workspace.findFiles("reports/**/*.csv")
 def("REPORTS", csvs)
 
 const instructions = await workspace.readText(".github/pr-title-guidelines.md")
