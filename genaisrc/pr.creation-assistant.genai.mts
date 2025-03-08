@@ -7,7 +7,8 @@ script({
         "system.safety_harmful_content",
         "system.safety_protected_material",
     ],
-    model: "github:gpt-4o"
+    model: "github:gpt-4o",
+    responseType: "markdown",
 })
 
 // compute diff
