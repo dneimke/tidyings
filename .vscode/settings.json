@@ -10,5 +10,16 @@
     "unifiedjs",
     "usernamehw",
     "yoavbls"
+  ],
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": "./docs/coding-style-guidelines.md"
+    }
+  ],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Be extra descriptive in your commit message to help others understand your changes. For example, 'Fixes bug in the login form' or 'Adds a new feature to the dashboard'."
+    },
+    { "file": "./docs/pr-authoring-guidelines.md"}
   ]
 }
