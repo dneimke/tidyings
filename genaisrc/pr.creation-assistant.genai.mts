@@ -16,6 +16,11 @@ const changes = await git.diff({
     base: defaultBranch,
 })
 
+def("GIT_DIFF", changes, {
+    maxTokens: 30000,
+    detectPromptInjection: "available",
+})
+
 const instructions = await workspace.readText("docs/pr-guidelines.md")
 def("PR_STANDARDS", instructions.content)
 
